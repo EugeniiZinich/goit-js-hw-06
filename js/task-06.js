@@ -2,9 +2,6 @@ const refs = {
   inputValue: document.querySelector('#validation-input'),
 };
 
-// console.log(refs.inputValue.getAttribute('data-length'));
-
-// console.log(refs.inputValue);
 const dataLength = refs.inputValue.getAttribute('data-length');
 
 refs.inputValue.addEventListener('blur', onInputValidCheck);
