@@ -12,13 +12,9 @@ function onFormSubmit(event) {
   const password = formElements.password.value;
 
   if (formElements.password.value === '' || formElements.email.value === '') {
-    alert(' Заповніть всі поля');
-  } else if (
-    formElements.password.value !== '' ||
-    formElements.email.value !== ''
-  ) {
-    refs.form.reset();
+    return alert(' Заповніть всі поля');
   }
+
   const formData = {
     mail,
     password,
